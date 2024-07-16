@@ -5,13 +5,6 @@ spring:
                 locator:
                     enabled: true
                     lower-case-service-id: true
-            routes:
-                - id: administrator-service
-                  uri: lb://administrator-service
-                  predicates:
-                      - Path=/admin/**
-                  filters:
-                      - RemoveRequestHeader=Cookie,Set-Cookie
 eureka:
     client:
         service-url:
