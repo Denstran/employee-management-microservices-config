@@ -1,0 +1,4 @@
+modelmapper:
+    enable-field-matching: true
+    field-access-level: PRIVATE
+    matching-strategy: STRICT
