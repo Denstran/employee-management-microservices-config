@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: postgresql
+        url: jdbc:postgresql://localhost:5432/employee_management_task_service
+        username: postgres
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
