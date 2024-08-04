@@ -16,6 +16,10 @@ spring:
                   uri: lb://payment-log-service
                   predicates:
                       - Path=/payments/**
+                - id: task-service
+                  uri: lb://task-service
+                  predicates:
+                      - Path=/tasks/**
 eureka:
     client:
         service-url:
